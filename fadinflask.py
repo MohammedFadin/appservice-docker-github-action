@@ -4,8 +4,8 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 port = int(os.environ.get('FLASK_RUN_PORT', 80))
 
-@app.route('/', methods=['GET'])
-def sayHello():
+@app.route('/hello', methods=['GET'])
+def hello():
     return "Hello Fadin v2!"
 
 if __name__ == '__main__':
