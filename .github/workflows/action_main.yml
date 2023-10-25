@@ -40,5 +40,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ vars.AZURE_WEBAPP_NAME }}
-          images: "${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ env.REPO }}/myflaskapp:${{ github.sha }}"
+          images: "${{ secrets.REGISTRY_LOGIN_SERVER }}/myflaskapp:${{ github.sha }}"
           resource-group-name: ${{ vars.AZURE_RESOURCE_GROUP }}
