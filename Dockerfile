@@ -19,7 +19,7 @@ COPY . /app
 
 # Used for Flask
 ENV LISTEN_PORT=80
-EXPOSE 8080
+EXPOSE 80
 
 # ENTRYPOINT ["python3"]
 CMD [ "python3", "fadinflask.py" ]
