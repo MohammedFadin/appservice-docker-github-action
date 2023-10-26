@@ -18,8 +18,8 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # Used for Flask
-ENV LISTEN_PORT=80
-EXPOSE 80
+ENV LISTEN_PORT=8081
+EXPOSE 8081
 
 # ENTRYPOINT ["python3"]
 CMD [ "python3", "fadinflask.py" ]
